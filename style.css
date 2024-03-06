@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Protest+Guerrilla');
+
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+nav{
+    border: solid #914c27;
+    border-radius: 32px;
+    margin: 12px 14px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    }
+nav > ul,
+nav> ul> li{
+    outline: 0;
+    }
+nav >ul > li> a{
+    text-decoration: none;
+    }        
+.main-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 60px;
+        overflow: hidden;
+        background: #914c2715;
+        transition: width .05s linear;
+        -webkit-transition: width .05s linear;
+        z-index: 10;
+        padding-top: 10px;
+    
+    }
+.main-menu:hover{
+        width: 280px;
+        overflow: visible;
+    }
+.main-menu >ul>li{
+    position: relative;
+    display: block;
+    width: 180px;
+    }
+.main-menu ul li:hover{
+        background-color: rgba(0, 183, 255, 0.246);
+        border-radius: 12px;
+        margin-left: 12px;
+        width: 240px;
+        height: 58px;
+    }
+.main-menu ul li a:hover{
+        color: #914c27;
+    }
+.main-menu >ul >li >a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    /* font-size: 1rem; */
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    padding: 10px 0;
+    }
+
+.nav-icon{
+
+        width: 40px;
+        height: 30px;
+        margin-left: 12px;
+        margin-right: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+.nav-text{
+        width: 120px;
+        height: 20px;
+        font-size: 1.5em;
+        font-family: 'Protest Guerrilla';
+    
+}
+.logout{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+/* home section  */
+.home{
+    top: 0;
+    margin-right: 18%;
+    margin-left:25% ;
+    margin-top: 10%;
+}    
+.main-heading{
+    font-family: 'Protest Guerrilla';
+
+    border: solid #914c27;
+    font-size: 3rem;
+    padding: 41px;
+    border-radius: 39px;
+    color: #ffffff;
+    background: #914c2726;
+}
+.main-heading:hover{
+    border: solid #4f4e4d;
+
+    color: #914c27;
+    background: #ffffff6d;
+}
